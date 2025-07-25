@@ -15,10 +15,6 @@ This project predicts **how soon a neighborhood is likely to undergo gentrificat
 ## 📊 Data Sources
 
 - **U.S. Census / ACS** (demographics, housing, income)
-- **Zillow / Redfin** (home value and rental trends)
-- **City Planning & Permits** (new development signals)
-- **Local crime and business activity**
-- **Transit & infrastructure proximity (GIS)**
 
 ---
 
@@ -28,18 +24,13 @@ This project predicts **how soon a neighborhood is likely to undergo gentrificat
 - Median income and income growth
 - Median rent and rent-to-income ratio
 - Educational attainment
-- New business count
-- Public transit and amenity proximity
 
 ### 🎯 Target Variable
 - **Regression:** Estimated years until gentrification
-- **Classification (optional):** Binary flag for "likely gentrified within 5 years"
+- **Classification:** Binary flag for already gentrified
 
 ### 🤖 Models Used
-- Random Forest Regressor
-- XGBoost
-- Logistic Regression (for classification variant)
-- Time series analysis for trend modeling
+- TBD
 
 ---
 
@@ -54,8 +45,6 @@ features = {
     "income_growth_5yr": 0.12,
     "median_rent": 1800,
     "college_educated_pct": 0.45,
-    "new_businesses_past_3yr": 15,
-    "transit_score": 0.8
 }
 
 years = predict_years_until_gentrification(features)
