@@ -30,6 +30,10 @@ This project predicts **how soon a zipcode is likely to undergo gentrification**
 ### 🤖 Models Used
 - TBD
 
+### Procedure
+- First create a classification model to determine if zipcodes are gentrified in any given year
+- Replicated the Urban Displacement Project Gentrification methodology
+- We then fitted it with different survival analyis models
 ---
 
 ## 🧪 Example Usage
