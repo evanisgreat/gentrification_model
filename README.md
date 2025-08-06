@@ -44,7 +44,7 @@ This project predicts **how likely a zip-code undergoes gentrification** using s
 from model import probability_gentrified
 
 features = {
-    "zip_code": "78738",
+    "zip_code": "78725",
     "median_income": 62000,
     "median_rent": 1800,
     "college_educated_pct": 0.45,
