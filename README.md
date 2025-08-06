@@ -68,6 +68,8 @@ If you would like to contribute, please contact repo owner for more info
 
 ## License
 
+See license.md
+
 ---
 
 ## Acknowledgement
