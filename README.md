@@ -1,6 +1,6 @@
 # 🏙️ Zipcode Gentrification Prediction
 
-This project predicts **how soon a zipcode is likely to undergo gentrification** using socioeconomic, housing, and demographic data. It aims to support urban planners, researchers, and communities in identifying early indicators of gentrification.
+This project predicts **how likely a zip-code undergoes gentrification** using socioeconomic, housing, and demographic data. It aims to support urban planners, researchers, and communities in identifying early indicators of gentrification.
 
 ---
 
