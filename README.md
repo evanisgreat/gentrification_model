@@ -46,9 +46,42 @@ from model import probability_gentrified
 features = {
     "zip_code": "78725",
     "median_income": 62000,
+
     "median_rent": 1800,
     "college_educated_pct": 0.45,
 }
 
 prob = probability_gentrified(features)
 print(f"Estimated gentrification probability {prob}")
+```
+---
+
+## Packages Used
+- sklearn
+
+---
+
+## Contribution
+If you would like to contribute, please contact repo owner for more info
+
+---
+
+## License
+
+---
+
+## Acknowledgement
+
+We would like to sincerely thank Dr. Eugene Pinsky and Patrick Bloniasz for their teaching of foundational data science principles. We extend this gratitude to all of the teaching fellows for their guidance and support we received at BU RISE. Additionally, we would like to thank our families for allowing us to attend this research program.
+
+---
+
+### Contact Info
+email evanhyip@gmail for more info
+
+---
+
+## Development Progres
+We have preliminary results but will continue to work to improve the models
+
+
