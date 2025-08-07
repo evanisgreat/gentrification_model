@@ -60,6 +60,8 @@ print(f"Estimated gentrification probability {prob}")
 - sklearn
 - matplotlib
 - seaborn
+- pandas
+- numpy
 
 ---
 
