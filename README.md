@@ -1,12 +1,12 @@
 # 🏙️ Zipcode Gentrification Prediction
 
-This project predicts **how soon a zipcode is likely to undergo gentrification** using socioeconomic, housing, and demographic data. It aims to support urban planners, researchers, and communities in identifying early indicators of gentrification.
+This project predicts **how likely a zip-code undergoes gentrification** using socioeconomic, housing, and demographic data. It aims to support urban planners, researchers, and communities in identifying early indicators of gentrification.
 
 ---
 
 ## 📌 Overview
 
-**Gentrification** is often marked by rising home prices, demographic shifts, new business development, and changes in household income. This model estimates the **number of years until a neighborhood is likely to experience gentrification** based on historical trends and current data.
+**Gentrification** is often marked by rising home prices, demographic shifts, new business development, and changes in household income. This model estimates the **probability of a neighborhood to be gentrified in a given year** based on historical trends and current data.
 
 ---
 
@@ -20,7 +20,7 @@ This project predicts **how soon a zipcode is likely to undergo gentrification**
 
 ### 🔧 Feature Engineering
 - Median income and income growth
-- Median rent and rent-to-income ratio
+- Median rent and rent growth
 - Educational attainment
 
 ### 🎯 Target Variable
@@ -28,26 +28,62 @@ This project predicts **how soon a zipcode is likely to undergo gentrification**
 - **Classification:** Binary flag for already gentrified
 
 ### 🤖 Models Used
-- TBD
+- Logistic Regression
+- Random Forest
+- Stacked Model
 
 ### Procedure
 - First create a classification model to determine if zipcodes are gentrified in any given year
 - Replicated the Urban Displacement Project Gentrification methodology
-- We then fitted it with different survival analyis models
+- We then fitted it with different forecasting models
 ---
 
 ## 🧪 Example Usage
 
 ```python
-from model import predict_years_until_gentrification
+from model import probability_gentrified
 
 features = {
-    "zip_code": "78738",
+    "zip_code": "78725",
     "median_income": 62000,
-    "income_growth_5yr": 0.12,
+
     "median_rent": 1800,
     "college_educated_pct": 0.45,
 }
 
-years = predict_years_until_gentrification(features)
-print(f"Estimated years until gentrification: {years}")
+prob = probability_gentrified(features)
+print(f"Estimated gentrification probability {prob}")
+```
+---
+
+## Packages Used
+- sklearn
+
+---
+
+## Contribution
+If you would like to contribute, please contact repo owner for more info
+
+---
+
+## License
+
+See license.md
+
+---
+
+## Acknowledgement
+
+We would like to sincerely thank Dr. Eugene Pinsky and Patrick Bloniasz for their teaching of foundational data science principles. We extend this gratitude to all of the teaching fellows for their guidance and support we received at BU RISE. Additionally, we would like to thank our families for allowing us to attend this research program.
+
+---
+
+### Contact Info
+email evanhyip@gmail for more info
+
+---
+
+## Development Progres
+We have preliminary results but will continue to work to improve the models
+
+
